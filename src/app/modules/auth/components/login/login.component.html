@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" (click)="backClick()" routerLinkActive="active">Back</a>
+  </div>
+</nav>
+<div class="py-3">
+
+</div>
+<div class="card clr" style="width: auto; margin-left: 30%;margin-right: 30%;">
+  <div style="padding-left: 3px;padding-right: 2px;padding-top: 3px;padding-bottom: 3px;">
+    <img src="./assets/images/login.png" class="card-img-top" alt="">
+  </div>  
+  <div class="card-body clr">
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Username:</span>
+          </div>
+          <input #box id="user" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Password:</span>
+          </div>
+          <input #box id="pass"  type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3" >
+          <button type="button" class="btn btn-primary" (click)="login()" style="margin-left: auto;margin-right: auto; width: 200px;">Login</button>
+      </div>
+      <div class="input-group mb-3" >
+          <p style="margin-left: auto;margin-right: auto; "><a href="">don't have account?</a></p>        
+      </div>
+  </div>
+</div>

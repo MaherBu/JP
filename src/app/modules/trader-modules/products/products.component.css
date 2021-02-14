@@ -1,0 +1,14 @@
+.flex-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.submit {
+    width: 200px;
+    float: right;
+    margin-right: 1%;
+    height: 40px;
+    background: #2196f3;
+    color: white;
+}
+  

@@ -1,0 +1,9 @@
+<div class="card">
+  <img class="card-img-top" [src]="item.image" alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title">{{item.title}}</h2>
+    <p class="card-text">{{item.description}}</p>
+    <a mat-raised-button class="btn btn-primary" (click)="editItem()">Edit</a>
+    <a mat-raised-button class="btn btn-danger" (click)="delete()">Delete</a>
+  </div>
+</div>

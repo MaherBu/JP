@@ -6,15 +6,12 @@ import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ModulesModule } from './modules/modules.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TraderProfileComponent } from './modules/trader-profile/trader-profile.component';
-import { AddProductComponent } from './modules/add-product/add-product.component';
-
+import { TraderProfileComponent } from './modules/admin-modules/trader-profile/trader-profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddProductComponent,
     TraderProfileComponent,
   ],
   imports: [

@@ -1,0 +1,11 @@
+<div class="flex-grid">
+  <h1>Products</h1>
+  <button routerLink="/trader/add-product" mat-raised-button class="submit">Add New Product</button>
+</div>
+<mat-divider></mat-divider>
+
+<div class="mt-2 row">
+  <div class=" col-md-3 col-sm-12" *ngFor="let item of products">
+    <app-product-item [item]="item" (edit)="editProduct(item)" (removed)="removeProduct(item.id)"></app-product-item>
+  </div>
+</div>

@@ -10,20 +10,6 @@ export class LoginComponent implements OnInit {
 
   constructor(public route: ActivatedRoute, private router: Router) { }
    public user:any={username: '',password: ''}
-  // public user:any={username: '',password: ''}
-
-
-  // onKey(event: any) { // without type info
-  //   if(this.username == "admin" && this.password == "admin"){
-  //     // this.values += event.target.value + ' | ';
-  //     //this.router.navigateByUrl('adminhome');
-  //     this.signIn();
-  //   }
-  //   else{
-  //     alert("Invalid");
-  //   }
-  // }
-
   getVal()
   {
     
@@ -35,8 +21,8 @@ export class LoginComponent implements OnInit {
     if(user == "admin" && pass == "admin"){
       this.router.navigate(["/admin"]);
     }
-    else{
-      alert("Invalid");
+    else if(user == "tr" && pass == "tr"){
+      this.router.navigate(["/trader"]);
     }
 
   }

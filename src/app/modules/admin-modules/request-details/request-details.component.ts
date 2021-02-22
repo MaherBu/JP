@@ -15,4 +15,7 @@ export class RequestDetailsComponent implements OnInit {
   home(){
     this.router.navigateByUrl('/admin');
   }
+  back(){
+    this.router.navigateByUrl('/requests');
+  }
 }

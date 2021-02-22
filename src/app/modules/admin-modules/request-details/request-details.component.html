@@ -5,7 +5,7 @@
       </button>
     </div>
     <div>
-      <a [routerLink]="['/requests']" >Back</a>
+      <a (click)="back()">Back</a>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <ul fxLayout fxLayoutGap="6px" class="navigation-items">
@@ -24,18 +24,116 @@
             <mat-card-subtitle>Email</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-            <p>Username: Username</p>
-            <p>Role: Role</p>
+          <div class="row"> 
+            <div style="margin-left: 5px;">
+                <p class="fw-bolder" style="font-weight: bold;">Username:</p>
+            </div>
+            <div style="margin-left: 5px;">
+                <p class="fw-light">OdayAm2</p>
+            </div> 
+          </div>
+          <div class="row"> 
+            <div style="margin-left: 5px;">
+                <p class="fw-bolder" style="font-weight: bold;">Status:</p>
+            </div>
+            <div style="margin-left: 5px;">
+                <p class="fw-light">Pending</p>
+            </div> 
+          </div>
             <div id="departmentButtonsDiv">
               <button class="btn btn-outline-success" type="button">Approve</button>
               <div class="divider wid"></div>
               <button class="btn btn-outline-danger" type="button">Reject</button>
             </div>
-            <h2>Blog Entries of Username</h2>
         </mat-card-content>
     </mat-card>
   </div>
   <div class="main-div">
-    <mat-card class="detailscard">
+      <div class="container">
+        <mat-card class="detailscard">
+        <div class="child">
+          <div class="col-md-13 my-border">
+            <div class="row center"> 
+              <div class="col-xs-2 col-md-2 col-lg-3">
+                  <p class="fw-bolder" style="font-weight: bold;">Trader FirstName:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">Oday</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light" style="font-weight: bold;">Trader LastName:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">Amer</p>
+              </div>  
+          </div> 
+          <div class="row center"> 
+              <div class="col-xs-2 col-md-2 col-lg-3">
+                  <p class="fw-bolder" style="font-weight: bold;">Address:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">Damascuse, Mazzeh</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light" style="font-weight: bold;">Email:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">test@gmail.com</p>
+              </div>  
+          </div> 
+          <div class="row center"> 
+              <div class="col-xs-2 col-md-2 col-lg-3">
+                  <p class="fw-bolder" style="font-weight: bold;">Username:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">OdayAm</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light" style="font-weight: bold;">Nationality:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">Syrian</p>
+              </div>  
+          </div>
+          <div class="row center"> 
+              <div class="col-xs-2 col-md-2 col-lg-3">
+                  <p class="fw-bolder" style="font-weight: bold;">Birthdate:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">20-1-1998</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light" style="font-weight: bold;">Subscription Type:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">6 Month</p>
+              </div>  
+          </div>
+          <div class="row center"> 
+              <div class="col-xs-2 col-md-2 col-lg-3">
+                  <p class="fw-bolder" style="font-weight: bold;">Phone Number:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">+963945222222</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light" style="font-weight: bold;">Credit Card Number:</p>
+              </div>
+              <div class="col-xs-2 col-md-2 col-lg-2">
+                  <p class="fw-light">222-222222-22</p>
+              </div>  
+          </div>
+          </div>
+      </div>
     </mat-card>
   </div>
+
+
+
+  <!--
+      <div class="column">
+          <div class="circular--portrait">
+            <img src="assets/images/user.png" alt=""/>
+          </div>
+      </div>
+  -->

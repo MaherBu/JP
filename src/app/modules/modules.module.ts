@@ -37,15 +37,17 @@ import { ProductsComponent } from './trader-modules/products/products.component'
 import { CreateStoreComponent } from './trader-modules/create-store/create-store.component';
 import { AddProductComponent } from './trader-modules/add-product/add-product.component';
 import {MatSelectModule} from '@angular/material/select';
+import { StoresPageComponent } from './admin-modules/stores-page/stores-page.component';
+import { StoreItemComponent } from './components/store-item/store-item.component';
 
 export const trRoutes =  [
-  { path: 'dashboard',component: DashboardComponent, label: 'Profile' },
   { path: 'product',component: ProductsComponent, label: 'Products' },
   { path: 'create-store',component: CreateStoreComponent, label: 'Create Store' },
-
+  { path: 'dashboard',component: DashboardComponent, label: 'Dashboard' },
  ];
  
  export const adRoutes = [
+  { path: 'stores',component: StoresPageComponent, label: 'Stores' },
   { path: 'traders',component: TradersComponent, label: 'Traders' },
   { path: 'requests',component: RequestsComponent, label: 'Requests' },
   { path: 'reports',component: ReportsComponent, label: 'Reports' },
@@ -73,6 +75,8 @@ export const trRoutes =  [
     WidgetQuickProgressValueComponent,
     WidgetQuickValueCenterComponent,
     SideMenuComponent,
+    StoresPageComponent,
+    StoreItemComponent,
 
   ],
   imports: [

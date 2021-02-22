@@ -1,5 +1,3 @@
-import {Validators} from '@angular/forms';
-
 export class ProductItem {
   id: number;
   title: string;

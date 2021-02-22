@@ -6,7 +6,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.css']
+  styleUrls: ['./add-product.component.scss']
 })
 export class AddProductComponent implements OnInit {
   addForm: FormGroup;
@@ -134,9 +134,9 @@ export class AddProductComponent implements OnInit {
   //   }
   // }
 
-  // addProduct(form): void {
-  //   if (this.productImages.length) {
-  //     console.log(form);
-  //   }
-  // }
+  addProduct(): void {
+    if (this.productImages.length) {
+      console.log("form");
+    }
+  }
 }

@@ -11,4 +11,10 @@
     background: #2196f3;
     color: white;
 }
-  
+.title { 
+    margin-left: 20px;
+}
+.d{
+    /* margin: px; */
+    margin-bottom: 5px;
+}

@@ -5,6 +5,7 @@ import { BlacklistComponent } from './admin-modules/blacklist/blacklist.componen
 import { ReportsComponent } from './admin-modules/reportspage/reports.component';
 import { RequestDetailsComponent } from './admin-modules/request-details/request-details.component';
 import { RequestsComponent } from './admin-modules/requests/requests.component';
+import { StoresPageComponent } from './admin-modules/stores-page/stores-page.component';
 import { TraderDetailsComponent } from './admin-modules/trader-details/trader-details.component';
 import { TradersComponent } from './admin-modules/traders/traders.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path:'blacklist',
         component:BlacklistComponent
+      },
+      {
+        path:'stores',
+        component: StoresPageComponent
       },
     ]
   },

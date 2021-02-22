@@ -6,13 +6,11 @@ import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ModulesModule } from './modules/modules.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TraderProfileComponent } from './modules/admin-modules/trader-profile/trader-profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TraderProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +18,7 @@ import { TraderProfileComponent } from './modules/admin-modules/trader-profile/t
     SharedModule,
     AuthModule,
     ModulesModule,
-    BrowserAnimationsModule,  
+    BrowserAnimationsModule, 
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,4 @@
-<form #productDetailsNgForm="ngForm" [formGroup]="addForm" (ngSubmit)="addProduct(addForm.value)">
+<form #productDetailsNgForm="ngForm" [formGroup]="addForm" (ngSubmit)="addProduct()">
   <div class="row">
     <div class="col-md-6 col-sm-12">
       <h2>Product Details</h2>
@@ -47,10 +47,10 @@
       <button class="submit" mat-raised-button color="primary" type="submit">{{id ? 'Update' : 'Add'}} Product</button>
     </div>
     <div class="col-md-6">
-      <img class="product-main-image" *ngIf="firstImage" [src]="firstImage">
+      <img class="product-main-image" *ngIf="firstImage" [src]="firstImage" alt="">
       <div class="upload-img" *ngIf="!firstImage"
            [ngClass]="!firstImage && productDetailsNgForm.submitted? 'error-input' : ''">
-        <img src="./assets/images/camera.png">
+        <img src="./assets/images/camera.png" alt="">
         <p>Upload Photos</p>
         <small class="form-text text-muted">You can upload up to 5 photos per product</small>
         <input type="file" multiple="multiple" accept="image/*"
@@ -61,14 +61,14 @@
       <span class="error-text" *ngIf="!firstImage && productDetailsNgForm.submitted">
               This field is required</span>
       <div class="text-center" style=" width: 90%;" *ngIf="imgLoader">
-        <img src="./assets/images/loader.svg" style="width: 40px;">
+        <img src="./assets/images/loader.svg" style="width: 40px;" alt="">
       </div>
       <div *ngIf="productImages && productImages.length > 0" style=" width: 90%;">
         <ngu-carousel #product_details_carousel [inputs]="carouselTile" [dataSource]="productImages">
           <ngu-tile *nguCarouselDef="let item; let i = index">
             <ng-container *ngIf="i + 1 !== productImages.length">
               <div class="card-image">
-                <img class="thumb-image mini-image" [src]="item.image">
+                <img class="thumb-image mini-image" [src]="item.image" alt="">
                 <a mat-icon-button class="removeRs" (click)="removeImage(item)">
                   <mat-icon>close</mat-icon>
                 </a>
@@ -81,9 +81,11 @@
                   <mat-icon>add</mat-icon>
                 </button>
               </div>
-              <!--  <mat-icon mat-icon-button
+              <!--  
+                <mat-icon mat-icon-button
                               class="thumb-image" (click)="addMoreImg()"
-                                 style="height: 80px">add</mat-icon>-->
+                                 style="height: 80px">add</mat-icon>
+                                -->
               <input style="display: none" id="upload-img-file" class="upload-img-file"
                      type="file" accept="image/*" (change)="uploadMoreImg($event)"/>
             </ng-container>

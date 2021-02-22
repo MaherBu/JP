@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { navRouter } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'app-column-one',
@@ -10,6 +11,8 @@ export class ColumnOneComponent implements OnInit {
 
   constructor(private _router: Router){}
 
+  _navRouter = navRouter;
+  
   ngOnInit(): void {
   }
   hasRoute(route: string) {

@@ -18,4 +18,7 @@ export class RegisterComponent implements OnInit {
   backClick(){
     this.router.navigate(["/home"]);
   }
+  logIn(){
+    this.router.navigate(["/login"]);
+  }
 }

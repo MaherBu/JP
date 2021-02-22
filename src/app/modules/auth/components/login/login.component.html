@@ -1,5 +1,6 @@
-<nav class="navbar navbar-dark bg-primary">
-  <div class="container-fluid">
+<div class="img">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
     <a class="navbar-brand" (click)="backClick()" routerLinkActive="active">Back</a>
   </div>
 </nav>
@@ -24,10 +25,11 @@
           <input #box id="pass"  type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3" >
-          <button type="button" class="btn btn-primary" (click)="login()" style="margin-left: auto;margin-right: auto; width: 200px;">Login</button>
+          <button type="button" class="btn btn-dark" (click)="login()" style="margin-left: auto;margin-right: auto; width: 200px;">Login</button>
       </div>
       <div class="input-group mb-3" >
-          <p style="margin-left: auto;margin-right: auto; "><a href="">don't have account?</a></p>        
+          <p style="margin-left: auto;margin-right: auto; "><a (click)="signUp()" routerLinkActive="active">don't have account?</a></p>        
       </div>
   </div>
+</div>
 </div>

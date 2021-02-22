@@ -248,3 +248,21 @@
   height:auto;
   display:inline-block;
 }
+
+.p{
+  text-align: center;
+}
+
+.vertical { 
+  border-left: 3px solid black; 
+  height: 20px; 
+}
+.my-border
+{
+  border: medium double rgb(167, 166, 166);
+  width: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}

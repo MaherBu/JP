@@ -66,3 +66,43 @@ a {
    .btn{
      width: 100px;
    }
+   .column {
+    float: none;
+    width: 50%;
+    padding: 15px;
+    height: 500; /* Should be removed. Only for demonstration */
+  }
+  .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .circular--portrait {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .circular--portrait img {
+    width: 100%;
+    height: auto;
+  }
+  .my-border
+{
+  border: medium double rgb(167, 166, 166);
+  width: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.child{
+  margin: 10px;
+}
+.container{
+  margin-top: 10px;
+}

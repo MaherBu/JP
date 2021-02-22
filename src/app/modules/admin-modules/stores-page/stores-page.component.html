@@ -1,0 +1,9 @@
+<h1 class="title">Stores</h1>
+  <mat-divider></mat-divider>
+  
+  <div class="mt-2 row">
+    <div class="d col-md-3 col-sm-12" *ngFor="let item of stores">
+      <app-product-item [item]="item" (edit)="editProduct(item)" (removed)="removeProduct(item.id)"></app-product-item>
+    </div>
+  </div>
+  
